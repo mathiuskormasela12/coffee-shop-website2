@@ -1,0 +1,13 @@
+// ========== Layout Button
+button.btn {
+	border: none;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+	border-radius: .5rem;
+	background-color: $primary;
+	transition: opacity .5s;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
