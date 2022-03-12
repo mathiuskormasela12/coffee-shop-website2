@@ -7,7 +7,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import persistedStore from './redux/store';
 
 // import all views
-import Home from './views/Home';
+import Home from './views/home/Home';
 
 function Router() {
   const { store, persistor } = persistedStore();

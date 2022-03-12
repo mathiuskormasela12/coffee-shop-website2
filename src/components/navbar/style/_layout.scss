@@ -3,7 +3,9 @@
 nav.navbar {
 	background-color: white;
 	width: 100%;
-	padding: 2.5rem 0;
+	height: 6.5rem;
+	display: flex;
+	align-items: center;
 
 	div.flex-nav {
 		display: flex;
@@ -14,7 +16,6 @@ nav.navbar {
 			width: 15%;
 			cursor: pointer;
 	
-			// background-color: red;
 			& > figure.brand {
 				display: flex;
 				align-items: center;

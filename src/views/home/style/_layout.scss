@@ -1,0 +1,36 @@
+// ========== Home Page Layout
+
+div.home {
+	div.hero {
+		padding-top: 6rem;
+		height: calc(100vh - 6.5rem);
+		width: 100%;
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		), url('../../../assets/img/home-page.png') no-repeat scroll center center;
+		background-size: cover;
+	}
+
+	section.section-text {
+		margin-bottom: 2.4rem;
+
+		& > h1.title {
+			margin-bottom: 1.3rem;
+		}
+	}
+
+	h1.title {
+		color: white;
+		width: 35rem;
+		font-size: 3.2rem;
+	}
+
+	h6.subtitle {
+		color: white;
+		width: 35rem;
+		// letter-spacing: 0.5px;
+		font-size: 1.3rem;
+		line-height: 1.5;
+	}
+}

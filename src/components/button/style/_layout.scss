@@ -3,7 +3,7 @@ button.btn {
 	border: none;
 	font-size: 1rem;
 	cursor: pointer;
-	border-radius: .5rem;
+	border-radius: 10px;
 	font-weight: bold;
 	transition: opacity .5s;
 
@@ -27,14 +27,11 @@ button.btn {
 	}
 
 	&-lg {
-		padding: 1rem 3rem;
+		padding: 1.4rem 5rem;
+		font-size: 1.1rem;
 	}
 
 	&-rounded {
 		border-radius: 50px;
-	}
-
-	&:hover {
-		opacity: 0.5;
 	}
 }
