@@ -1,11 +1,38 @@
 // ========== Layout Button
 button.btn {
 	border: none;
-	padding: 1rem 1.5rem;
+	font-size: 1rem;
 	cursor: pointer;
 	border-radius: .5rem;
-	background-color: $primary;
+	font-weight: bold;
 	transition: opacity .5s;
+
+	&-primary {
+		background-color: $primary;
+		color: $secondary;
+		box-shadow: 1px 1px 30px -8px $primary;
+	}
+
+	&-secondary {
+		background-color: $secondary;
+		color: $primary;
+	}
+
+	&-sm {
+		padding: .7rem 2rem;
+	}
+
+	&-md {
+		padding: .9rem 2.8rem;
+	}
+
+	&-lg {
+		padding: 1rem 3rem;
+	}
+
+	&-rounded {
+		border-radius: 50px;
+	}
 
 	&:hover {
 		opacity: 0.5;

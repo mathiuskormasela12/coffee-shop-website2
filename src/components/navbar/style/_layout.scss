@@ -1,0 +1,81 @@
+// ========== Navbar Layout Style
+
+nav.navbar {
+	background-color: white;
+	width: 100%;
+	padding: 2.5rem 0;
+
+	div.flex-nav {
+		display: flex;
+		width: 100%;
+		align-items: center;
+
+		div.nav-brand {
+			width: 15%;
+			cursor: pointer;
+	
+			// background-color: red;
+			& > figure.brand {
+				display: flex;
+				align-items: center;
+			}
+	
+			& > figure.brand > img {
+				width: 1.7rem;
+				height: 1.7rem;
+				margin-right: .8rem;
+	
+				& + figcaption {
+					font-family: rubik-bold;
+					color: $dark;
+					font-size: 1.1rem;
+					letter-spacing: .2px;
+				}
+			}
+		}
+	
+		ul.nav-list {
+			width: 65%;
+			display: flex;
+			justify-content: center;
+			list-style: none;
+	
+			li.items {
+				font-size: 1rem;
+				padding: 0 1rem;
+			}
+
+			a.link.active {
+				color: $secondary;
+				font-family: rubik-bold !important;
+			}
+	
+			a.link {
+				color: $dark;
+				text-decoration: none;
+
+				&:hover {
+					color: $secondary;
+					font-weight: bold;
+				}
+			}
+		}
+
+		div.nav-btn {
+			width: 25%;
+
+			a.btn-login {
+				color: $black;
+				text-decoration: none;
+				font-size: 1rem;
+				font-weight: bold !important;
+				margin-right: 2.5rem;
+
+				&:hover {
+					color: $secondary;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

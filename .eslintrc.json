@@ -23,6 +23,9 @@
 			"import/prefer-default-export": "off",
 			"react/button-has-type": "off",
 			"react/prop-types": "error",
-			"no-tabs": "off"
+			"no-tabs": 0,
+			"import/no-cycle": "off",
+			"react/jsx-fragments": "off",
+			"react/jsx-props-no-spreading": "off"
     }
 }

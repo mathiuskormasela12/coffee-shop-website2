@@ -7,21 +7,31 @@ import PropTypes from 'prop-types';
 import styled from './style/style.module.scss';
 
 export function Button(props) {
-  const { type, onClick, children } = props;
+  const {
+    type, onClick, children, variant, size, rounded,
+  } = props;
 
   return (
-    <button type={type} onClick={onClick} className={styled.btn}>
+    <button type={type} onClick={onClick} className={`${styled.btn} ${styled[`btn-${variant}`]} ${styled[`btn-${size}`]} ${rounded ? styled['btn-rounded'] : ''}`}>
       { children }
     </button>
   );
 }
 
 Button.propTypes = {
-  type: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  type: PropTypes.string,
+  variant: PropTypes.string,
+  size: PropTypes.string,
+  rounded: PropTypes.bool,
+  onClick: PropTypes.func,
   children: PropTypes.string.isRequired,
 };
 
-Button.defaultValue = {
+Button.defaultProps = {
   type: 'submit',
+  variant: 'primary',
+  rounded: false,
+  size: 'md',
+
+  onClick: () => {},
 };
