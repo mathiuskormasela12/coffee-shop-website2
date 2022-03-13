@@ -3,7 +3,7 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import navItems from '../../constant/navItems';
+import { navItems } from '../../constant';
 
 // import all components
 import { Container, Button } from '..';

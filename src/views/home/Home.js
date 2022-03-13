@@ -1,12 +1,17 @@
 // ========== Home
 // import all modules
 import React, { Component } from 'react';
+import { brandingListItems } from '../../constant';
 
 // import all components
 import { Navbar, Container, Button } from '../../components';
 
 // import styles
 import styled from './style/style.module.scss';
+
+// import assets
+import teamWork from '../../assets/img/team-work.png';
+import checkCircle from '../../assets/img/check-circle.png';
 
 class Home extends Component {
   constructor(props) {
@@ -27,21 +32,52 @@ class Home extends Component {
         <Container width="100%">
           <Navbar />
           <div className={styled.hero}>
-            <Container width="80%">
-              <section className={styled['section-text']}>
-                <h1 className={styled.title}>
-                  Start Your Day with Coffee and Good Meals
-                </h1>
-                <h6 className={styled.subtitle}>
-                  We provide high quality beans, good taste, and
-                  healthy meals made by love just for you.
-                  Start your day with us for a bigger smile!
-                </h6>
-              </section>
-              <Button type="button" variant="primary" size="lg">
-                Get Started
-              </Button>
-            </Container>
+            <div className={styled['hero-head']}>
+              <Container width="80%">
+                <section className={styled['section-text']}>
+                  <h1 className={styled.title}>
+                    Start Your Day with Coffee and Good Meals
+                  </h1>
+                  <h6 className={styled.subtitle}>
+                    We provide high quality beans, good taste, and
+                    healthy meals made by love just for you.
+                    Start your day with us for a bigger smile!
+                  </h6>
+                </section>
+                <Button type="button" variant="primary" size="lg">
+                  Get Started
+                </Button>
+              </Container>
+            </div>
+            <div className={styled['hero-branding']}>
+              <Container width="80%">
+                <div className={styled.row}>
+                  <div className={styled.col}>
+                    <img src={teamWork} className={styled['team-work-img']} alt="Team Work" />
+                  </div>
+                  <div className={styled.col}>
+                    <h6 className={styled['branding-title']}>
+                      We Provide Good Coffee and Healthy Meals
+                    </h6>
+                    <p className={styled['branding-subtitle']}>
+                      You can explore the menu that we provide
+                      with fun and have their own taste and make
+                      your day better.
+                    </p>
+                    <ul className={styled['branding-list']}>
+                      {brandingListItems.map((item) => (
+                        <li key={String(item.id)} className={styled['branding-list-items']}>
+                          <img src={checkCircle} className={styled['check-circle']} alt="Check Circle" />
+                          <span>
+                            { item.text }
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </Container>
+            </div>
           </div>
         </Container>
       </div>

@@ -2,35 +2,113 @@
 
 div.home {
 	div.hero {
-		padding-top: 6rem;
-		height: calc(100vh - 6.5rem);
-		width: 100%;
-		background: linear-gradient(
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.2)
-		), url('../../../assets/img/home-page.png') no-repeat scroll center center;
-		background-size: cover;
-	}
+		div.hero-head {
+			padding-top: 6.5rem;
+			height: calc(100vh - 6.2rem);
+			width: 100%;
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.2),
+				rgba(0, 0, 0, 0.2)
+			), url('../../../assets/img/home-page.png') no-repeat scroll center center;
+			background-size:cover;
 
-	section.section-text {
-		margin-bottom: 2.4rem;
-
-		& > h1.title {
-			margin-bottom: 1.3rem;
+			section.section-text {
+				margin-bottom: 2rem;
+		
+				& > h1.title {
+					margin-bottom: 1.3rem;
+				}
+			}
+		
+			h1.title {
+				color: white;
+				width: 35rem;
+				font-size: 3rem;
+			}
+		
+			h6.subtitle {
+				color: white;
+				width: 35rem;
+				letter-spacing: 0.5px;
+				font-size: 1.3rem;
+				line-height: 30px;
+			}
 		}
-	}
 
-	h1.title {
-		color: white;
-		width: 35rem;
-		font-size: 3.2rem;
-	}
+		div.hero-branding {
+			height: 100vh;
+			background-color: white;
+			display: flex;
+			align-items: center;
 
-	h6.subtitle {
-		color: white;
-		width: 35rem;
-		// letter-spacing: 0.5px;
-		font-size: 1.3rem;
-		line-height: 1.5;
+			div.row {
+				display: flex;
+				align-items: center;
+
+				div.col {
+					
+					&:first-child {
+						flex: 3;
+					}
+
+					&:last-child {
+						flex: 2;
+					}
+
+					h6.branding-title {
+						font-size: 1.7rem;
+						color: $black;
+						word-spacing: 1px;
+						line-height: 2.4rem;
+						font-family: rubik-regular;
+					}
+
+					p.branding-subtitle {
+						color: $dark;
+						margin-top: 1rem;
+						font-family: rubik-regular;
+						font-size: 1rem;
+						line-height: 1.5rem;
+						word-spacing: 1px;
+					}
+
+					ul.branding-list {
+						margin-top: 1rem;
+						color: $dark;
+						font-family: rubik-regular;
+						font-size: .9rem;
+						list-style: none;
+
+						& > li.branding-list-items {
+							display: flex;
+
+							&:not(:last-child) {
+								margin-bottom: .8rem;
+							}
+
+							img.check-circle {
+								width: 1.6rem;
+								height: 1.6rem;
+								margin-right: .5rem;
+
+								& + span {
+									line-height: 1.5rem;
+								}
+							}
+						}
+					}
+
+					&:first-child {
+						display: flex;
+						align-items: center;
+
+						img.team-work-img {
+							width: 32rem;
+							height: 25rem;
+						}
+					}
+				}
+			}
+		}
 	}
 }

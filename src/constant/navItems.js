@@ -1,6 +1,6 @@
 // ========== Nav Items
 
-export default [
+export const navItems = [
   {
     id: 1,
     text: 'Home',
