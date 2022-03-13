@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 // import styles
 import styled from './style/style.module.scss';
 
-export function Container({ children, width }) {
+export function Container({ children, width, relative }) {
   return (
-    <div className={styled.container} style={{ width }}>
+    <div className={`${styled.container} ${relative ? styled.relative : ''}`} style={{ width }}>
       { children }
     </div>
   );
@@ -17,8 +17,10 @@ export function Container({ children, width }) {
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   width: PropTypes.string,
+  relative: PropTypes.bool,
 };
 
 Container.defaultProps = {
   width: '80%',
+  relative: false,
 };

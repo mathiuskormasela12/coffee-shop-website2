@@ -12,6 +12,9 @@ import styled from './style/style.module.scss';
 // import assets
 import teamWork from '../../assets/img/team-work.png';
 import checkCircle from '../../assets/img/check-circle.png';
+import staff from '../../assets/img/staff.png';
+import store from '../../assets/img/store.png';
+import customer from '../../assets/img/customer.png';
 
 class Home extends Component {
   constructor(props) {
@@ -51,6 +54,29 @@ class Home extends Component {
             </div>
             <div className={styled['hero-branding']}>
               <Container width="80%">
+                <div className={styled.box}>
+                  <div className={styled['box-col']}>
+                    <img src={staff} className={styled['box-img']} alt="Staff" />
+                    <div className={styled['box-container']}>
+                      <p className={styled['box-title']}>90+</p>
+                      <p className={styled['box-subtitle']}>Staff</p>
+                    </div>
+                  </div>
+                  <div className={styled['box-col']}>
+                    <img src={store} className={styled['box-img']} alt="Store" />
+                    <div className={styled['box-container']}>
+                      <p className={styled['box-title']}>30+</p>
+                      <p className={styled['box-subtitle']}>Stores</p>
+                    </div>
+                  </div>
+                  <div className={styled['box-col']}>
+                    <img src={customer} className={styled['box-img']} alt="Customer" />
+                    <div className={styled['box-container']}>
+                      <p className={styled['box-title']}>800+</p>
+                      <p className={styled['box-subtitle']}>Customers</p>
+                    </div>
+                  </div>
+                </div>
                 <div className={styled.row}>
                   <div className={styled.col}>
                     <img src={teamWork} className={styled['team-work-img']} alt="Team Work" />

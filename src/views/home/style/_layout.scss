@@ -40,6 +40,48 @@ div.home {
 			background-color: white;
 			display: flex;
 			align-items: center;
+			position: relative;
+
+			div.box {
+				position: absolute;
+				top: -5rem;
+				width: 80%;
+				display: flex;
+				background-color: white;
+				border-radius: 7px;
+				padding: 1.8rem 0;
+				box-shadow: 1px 40px 100px -75px black;
+
+				&-col {
+					padding: 1.5rem 0;
+					flex: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					&:first-child, &:nth-child(2) {
+						border-right: 1px solid $line-color;
+					}
+
+					& p.box-title {
+						font-size: 1.5rem;
+						color: $black;
+						font-weight: bold;
+						margin-bottom: .5rem;
+
+						& + p.box-subtitle {
+							color: $dark;
+							font-size: .9rem;
+						}
+					}
+
+					& > img.box-img {
+						width: 3rem;
+						height: 3rem;
+						margin-right: 1rem;
+					}
+				}
+			}
 
 			div.row {
 				display: flex;
