@@ -152,5 +152,39 @@ div.home {
 				}
 			}
 		}
+
+		div.hero-product {
+			min-height: 100vh;
+			display: flex;
+			padding: 5rem 0 2rem 0;
+			background-color: $light;
+			box-sizing: content-box;
+
+			& header.header-hero-product {
+				text-align: center;
+
+				& > h5.header-title {
+					font-size: 1.5rem;
+					margin-bottom: 1.2rem;
+					color: $black;
+
+					& + p.header-subtitle {
+						font-size: .9rem;
+						color: $dark;
+					}
+				}
+			}
+
+			& main.main-product {
+				margin-top: 10rem;
+				display: flex;
+				justify-content: space-between;
+
+				& > div.main-col {
+					width: 25%;
+					height: 28rem;
+				}
+			}
+		}
 	}
 }

@@ -1,10 +1,12 @@
 // ========== Home
 // import all modules
 import React, { Component } from 'react';
-import { brandingListItems } from '../../constant';
+import { brandingListItems, favoriteCoffee } from '../../constant';
 
 // import all components
-import { Navbar, Container, Button } from '../../components';
+import {
+  Navbar, Container, Button, CardFavoriteCoffee,
+} from '../../components';
 
 // import styles
 import styled from './style/style.module.scss';
@@ -102,6 +104,33 @@ class Home extends Component {
                     </ul>
                   </div>
                 </div>
+              </Container>
+            </div>
+            <div className={styled['hero-product']}>
+              <Container width="80%">
+                <header className={styled['header-hero-product']}>
+                  <h5 className={styled['header-title']}>
+                    Here is People’s Favorite
+                  </h5>
+                  <p className={styled['header-subtitle']}>
+                    Let’s choose and have
+                    a bit taste of poeple’s favorite.
+                    It might be yours too!
+                  </p>
+                </header>
+                <main className={styled['main-product']}>
+                  {favoriteCoffee.map((item) => (
+                    <div className={styled['main-col']}>
+                      <CardFavoriteCoffee
+                        key={item.id}
+                        title={item.title}
+                        footerTitle={item.price}
+                        lists={item.lists}
+                        img={item.img}
+                      />
+                    </div>
+                  ))}
+                </main>
               </Container>
             </div>
           </div>

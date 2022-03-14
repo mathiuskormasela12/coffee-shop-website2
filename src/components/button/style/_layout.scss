@@ -18,8 +18,21 @@ button.btn {
 		color: $primary;
 	}
 
+	&-transparent-primary {
+		background-color: transparent;
+		color: $secondary;
+		border: 1px solid $primary;
+		transition: background-color .5s;
+
+		&:hover {
+			background-color: $primary;
+		}
+	}
+
 	&-sm {
-		padding: .7rem 2rem;
+		height: 2.8rem;
+		width: 9.5rem;
+		font-size: .9rem;
 	}
 
 	&-md {
