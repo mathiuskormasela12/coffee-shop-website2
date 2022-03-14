@@ -120,9 +120,8 @@ class Home extends Component {
                 </header>
                 <main className={styled['main-product']}>
                   {favoriteCoffee.map((item) => (
-                    <div className={styled['main-col']}>
+                    <div className={styled['main-col']} key={item.id}>
                       <CardFavoriteCoffee
-                        key={item.id}
                         title={item.title}
                         footerTitle={item.price}
                         lists={item.lists}

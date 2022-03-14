@@ -27,8 +27,8 @@ export function CardFavoriteCoffee({
         </header>
         <main className={styled['card-main']}>
           <ul className={styled['card-list']}>
-            {lists.map((item) => (
-              <li key={item} className={styled['card-items']}>
+            {lists.map((item, index) => (
+              <li key={String(index)} className={styled['card-items']}>
                 <img src={checklist} className={styled.checklist} alt="Check List" />
                 <span>{ item }</span>
               </li>
@@ -51,8 +51,8 @@ export function CardFavoriteCoffee({
 CardFavoriteCoffee.propTypes = {
   title: PropTypes.string,
   footerTitle: PropTypes.string,
-  lists: PropTypes.arrayOf,
-  // img: PropTypes.node.isRequired,
+  lists: PropTypes.arrayOf(PropTypes.string),
+  img: PropTypes.node.isRequired,
 };
 
 CardFavoriteCoffee.defaultProps = {
