@@ -156,7 +156,7 @@ div.home {
 		div.hero-product {
 			min-height: 100vh;
 			display: flex;
-			padding: 5rem 0 2rem 0;
+			padding: 5rem 0 4rem 0;
 			background-color: $light;
 			box-sizing: content-box;
 
@@ -164,8 +164,8 @@ div.home {
 				text-align: center;
 
 				& > h5.header-title {
-					font-size: 1.5rem;
-					margin-bottom: 1.2rem;
+					font-size: 1.8rem;
+					margin-bottom: 1.4rem;
 					color: $black;
 
 					& + p.header-subtitle {
@@ -176,7 +176,7 @@ div.home {
 			}
 
 			& main.main-product {
-				margin-top: 10rem;
+				margin-top: 14rem;
 				display: flex;
 				justify-content: space-between;
 
