@@ -17,6 +17,7 @@ import checkCircle from '../../assets/img/check-circle.png';
 import staff from '../../assets/img/staff.png';
 import store from '../../assets/img/store.png';
 import customer from '../../assets/img/customer.png';
+import hugeGlobal from '../../assets/img/huge-global.png';
 
 class Home extends Component {
   constructor(props) {
@@ -131,6 +132,24 @@ class Home extends Component {
                   ))}
                 </main>
               </Container>
+            </div>
+            <div className={styled['hero-map']}>
+              <Container width="80%">
+                <header className={styled['hero-map-header']}>
+                  <h3 className={styled['hero-map-header-title']}>
+                    Visit Our Store in the Spot on the Map Below
+                  </h3>
+                  <p className={styled['hero-map-header-subtitle']}>
+                    See our store in every city on the
+                    spot and spen your good day there. See you soon!
+                  </p>
+                </header>
+              </Container>
+              <main className={styled['hero-map-content']}>
+                <Container width="80%">
+                  <img src={hugeGlobal} className={styled['huge-global']} alt="Huge Global" />
+                </Container>
+              </main>
             </div>
           </div>
         </Container>

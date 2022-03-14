@@ -186,5 +186,42 @@ div.home {
 				}
 			}
 		}
+
+		div.hero-map {
+			min-height: 100vh;
+			background-color: $light;
+			// background-color: red;
+			padding: 3.5rem 0 2rem 0;
+
+			header.hero-map-header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				h3.hero-map-header-title {
+					font-size: 2rem;
+					margin-bottom: 1.5rem;
+					width: 22rem;
+					text-align: center;
+				}
+
+				p.hero-map-header-subtitle {
+					color: $dark;
+					width: 33rem;
+					line-height: 1.8rem;
+					text-align: center;
+				}
+			}
+
+			main.hero-map-content {
+				padding: 9rem 0 5rem 0;
+				text-align: center;
+
+				img.huge-global {
+					width: 80%;
+					height: 100%;
+				}
+			}
+		}
 	}
 }
