@@ -1,7 +1,7 @@
 // ========== Home
 // import all modules
 import React, { Component } from 'react';
-import { brandingListItems, favoriteCoffee } from '../../constant';
+import { brandingListItems, favoriteCoffee, ourPartner } from '../../constant';
 
 // import all components
 import {
@@ -148,6 +148,26 @@ class Home extends Component {
               <main className={styled['hero-map-content']}>
                 <Container width="80%">
                   <img src={hugeGlobal} className={styled['huge-global']} alt="Huge Global" />
+                </Container>
+              </main>
+            </div>
+            <div className={styled['hero-partner']}>
+              <Container width="80%">
+                <header className={styled['hero-partner-header']}>
+                  <h3 className={styled['hero-partner-header-title']}>
+                    Our Partner
+                  </h3>
+                </header>
+              </Container>
+              <main className={styled['hero-partner-content']}>
+                <Container width="80%">
+                  <div className={styled.row}>
+                    { ourPartner.map((item) => (
+                      <div className={styled.col} key={String(item.id)}>
+                        <img src={item.img} className={styled['partner-img']} alt={item.name} />
+                      </div>
+                    )) }
+                  </div>
                 </Container>
               </main>
             </div>

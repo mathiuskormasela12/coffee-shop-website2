@@ -222,5 +222,36 @@ div.home {
 				}
 			}
 		}
+
+		div.hero-partner {
+			height: auto;
+			padding: .8rem 0 2rem 0;
+			background-color: $light;
+
+			header.hero-partner-header {
+				h3.hero-partner-header-title {
+					color: $black;
+					font-size: 2rem;
+					margin-bottom: 1.5rem;
+					text-align: center;
+				}
+			}
+
+			main.hero-partner-content {
+				div.row {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					div.col {
+						width: 17%;
+
+						img.partner-img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
